@@ -30,4 +30,4 @@ def collate_by_sub_collection
   collated
 end
 
-Ruhoh::Resources::Pages::CollectionView.send(:include, PagesFindByName)
+Ruhoh::Resources::Pages::CollectionView.send(:include, collate_by_sub_collection)
